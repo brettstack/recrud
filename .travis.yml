@@ -1,0 +1,22 @@
+language: node_js
+node_js:
+  - 8
+
+script:
+  - npm install
+  - npm run test
+
+cache:
+  directories:
+    - node_modules
+
+notifications:
+  email:
+    on_failure: change
+
+# Pull Request builds do not run deploy
+deploy:
+  provider: script
+  skip_cleanup: true
+  script:
+    - npx semantic-release
