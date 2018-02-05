@@ -48,7 +48,7 @@
     ]
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "echo 'TODO: Implement jest and add tests'",
     "git-cz": "git-cz",
     "release": "node -r dotenv/config node_modules/semantic-release/bin/semantic-release --no-ci"
   },
