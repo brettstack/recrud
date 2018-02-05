@@ -1,0 +1,77 @@
+{
+  "name": "recrud",
+  "version": "0.0.0-development",
+  "description": "Simple CRUD actions and reducers for Redux.",
+  "main": "index.js",
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "release": {
+    "verifyConditions": [
+      "@semantic-release/changelog",
+      "@semantic-release/npm",
+      "@semantic-release/git",
+      "@semantic-release/github"
+    ],
+    "publish": [
+      "@semantic-release/changelog",
+      {
+        "path": "@semantic-release/npm",
+        "npmPublish": false,
+        "tarballDir": "dist"
+      },
+      {
+        "path": "@semantic-release/git",
+        "assets": [
+          "package.json",
+          "dist/**/*.{js|css}"
+        ],
+        "message": "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
+      },
+      {
+        "path": "@semantic-release/github",
+        "assets": "dist/*.tgz"
+      }
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-push": "#npm run test",
+      "commit-msg": "commitlint -e $GIT_PARAMS"
+    }
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "git-cz": "git-cz"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brettstack/recrud.git"
+  },
+  "keywords": [
+    "redux",
+    "crud"
+  ],
+  "author": "Brett Andrews (@brettstack)",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/brettstack/recrud/issues"
+  },
+  "homepage": "https://github.com/brettstack/recrud#readme",
+  "devDependencies": {
+    "@commitlint/config-conventional": "^6.1.0",
+    "commitizen": "^2.9.6",
+    "commitlint": "^6.1.0",
+    "cz-conventional-changelog": "^2.1.0",
+    "dotenv": "^5.0.0",
+    "husky": "^0.15.0-rc.4",
+    "semantic-release": "^12.4.1"
+  }
+}
