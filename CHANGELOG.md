@@ -5,3 +5,4 @@
 ### Bug Fixes
 
 * **release:** add command for semantic-release ([8c883d4](https://github.com/brettstack/recrud/commit/8c883d4))
+* add dist/ to .gitignore ([d182f33](https://github.com/brettstack/recrud/commit/d182f33))
