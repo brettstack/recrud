@@ -1,6 +1,6 @@
 {
   "name": "recrud",
-  "version": "0.0.0-development",
+  "version": "1.0.0",
   "description": "Simple CRUD actions and reducers for Redux.",
   "main": "index.js",
   "config": {
@@ -28,7 +28,7 @@
           "package.json",
           "dist/**/*.{js|css}"
         ],
-        "message": "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
+        "message": "chore(release): version ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
       },
       {
         "path": "@semantic-release/github",
