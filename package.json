@@ -3,6 +3,7 @@
   "version": "1.0.2",
   "description": "Simple CRUD actions and reducers for Redux.",
   "main": "index.js",
+  "module": "index.js",
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
@@ -50,7 +51,7 @@
   "scripts": {
     "test": "echo 'TODO: Implement jest and add tests'",
     "cz": "git-cz",
-    "release": "node -r dotenv/config node_modules/semantic-release/bin/semantic-release"
+    "release-local": "node -r dotenv/config node_modules/semantic-release/bin/semantic-release --no-ci"
   },
   "repository": {
     "type": "git",
