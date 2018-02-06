@@ -1,5 +1,5 @@
 # Recrud
-[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
+[![Travis](https://img.shields.io/travis/brettstack/recrud.svg)](https://travis-ci.org/brettstack/recrud) [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 
 ## Usage
 
