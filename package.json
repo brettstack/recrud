@@ -50,7 +50,7 @@
   "scripts": {
     "test": "echo 'TODO: Implement jest and add tests'",
     "git-cz": "git-cz",
-    "release": "node -r dotenv/config node_modules/semantic-release/bin/semantic-release --no-ci"
+    "release": "node -r dotenv/config node_modules/semantic-release/bin/semantic-release"
   },
   "repository": {
     "type": "git",
