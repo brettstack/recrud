@@ -475,7 +475,7 @@ export function crudReducer ({ state = {}, action = {}, ...makeCrudArgs }) {
           ...record,
           data: {
             ...record.data,
-            responseData
+            ...responseData
           },
           states: {
             ...record.states,
